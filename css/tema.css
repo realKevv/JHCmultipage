@@ -176,7 +176,7 @@ p {
 }
 
 .section {
-	padding-block: var(--space-9);
+	padding-block: var(--space-5);
 }
 
 /* =========================================
@@ -338,10 +338,98 @@ a:hover {
    ========================================= */
 
 .site-footer {
-	border-top: 1px solid var(--color-border-soft);
-	background: var(--color-surface);
-	padding-block: var(--space-5);
-	text-align: center;
+    margin-top: var(--space-9);
+    border-top: 1px solid var(--color-border-soft);
+    background: var(--color-surface);
+    padding-top: var(--space-7);
+}
+
+/* Griglia principale del footer */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    gap: var(--space-6);
+    padding-bottom: var(--space-7);
+}
+
+/* Stile della colonna del brand */
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.footer-brand .logo {
+    display: inline-block;
+    color: var(--color-text);
+}
+
+.footer-description {
+    max-width: 360px;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-normal);
+    color: var(--color-text-muted);
+}
+
+/* Colonne di navigazione */
+.footer-nav h4 {
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-4);
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+/* Link del footer interni/esterni */
+.footer-nav a {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    transition: var(--transition-fast);
+}
+
+.footer-nav a:hover {
+    color: var(--color-accent); /* Cambia colore usando l'accento teal */
+    transform: translateX(4px); /* Micro-interazione carina */
+    display: inline-block;
+}
+
+/* Barra inferiore dei Copyright */
+.footer-bottom {
+    border-top: 1px solid var(--color-border-soft);
+    background: var(--color-bg);
+    padding-block: var(--space-4);
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+}
+
+.footer-bottom p {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+}
+
+.footer-legal a {
+    color: var(--color-text-muted);
+    transition: var(--transition-fast);
+}
+
+.footer-legal a:hover {
+    color: var(--color-primary);
 }
 
 /* =========================================
@@ -356,4 +444,16 @@ a:hover {
 
 		--space-9: 4rem;
 	}
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr; /* Incolonna tutto sui dispositivi mobili */
+        gap: var(--space-5);
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }
