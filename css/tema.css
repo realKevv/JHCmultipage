@@ -279,6 +279,53 @@ a:hover {
 }
 
 /* =========================================
+   Header
+   ========================================= */
+
+.site-header {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	backdrop-filter: blur(16px);
+	border-bottom: 1px solid var(--color-border-soft);
+	background: rgba(15, 23, 42, 0.92);
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: var(--header-height);
+}
+
+.logo {
+	color: var(--color-text);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-xl);
+}
+
+.menu {
+	display: flex;
+	gap: var(--space-4);
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu a {
+	border-radius: var(--radius-full);
+	padding: var(--space-2) var(--space-4);
+	color: var(--color-text-secondary);
+	font-weight: var(--font-weight-medium);
+}
+
+.menu a:hover,
+.menu a.active {
+	background: var(--color-primary-soft);
+	color: var(--color-text);
+}
+
+/* =========================================
    Responsive
    ========================================= */
 
