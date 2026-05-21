@@ -1,3 +1,18 @@
 {
-    "liveServer.settings.port": 5502
+	"liveServer.settings.port": 5502,
+	"recommendations": [
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-rename-tag",
+		"biomejs.biome",
+		"streetsidesoftware.code-spell-checker",
+		"kamikillerto.vscode-colorize",
+		"vunguyentuan.vscode-css-variables",
+		"vincaslt.highlight-matching-tag",
+		"kisstkondoros.vscode-gutter-preview",
+		"streetsidesoftware.code-spell-checker-italian",
+		"yzhang.markdown-all-in-one",
+		"pkief.material-icon-theme",
+		"bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+		"christian-kohler.path-intellisense"
+	]
 }
