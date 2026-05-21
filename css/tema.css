@@ -326,6 +326,17 @@ a:hover {
 }
 
 /* =========================================
+   Header
+   ========================================= */
+
+.site-footer {
+	border-top: 1px solid var(--color-border-soft);
+	background: var(--color-surface);
+	padding-block: var(--space-5);
+	text-align: center;
+}
+
+/* =========================================
    Responsive
    ========================================= */
 
