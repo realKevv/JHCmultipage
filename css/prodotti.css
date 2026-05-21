@@ -74,22 +74,3 @@
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 }
-
-@media (max-width: 640px) {
-	.navbar {
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-		gap: var(--space-3);
-		padding-block: var(--space-4);
-	}
-
-	.menu {
-		flex-wrap: wrap;
-		gap: var(--space-2);
-	}
-
-	.product-grid {
-		grid-template-columns: 1fr;
-	}
-}
