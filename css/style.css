@@ -1,0 +1,95 @@
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid var(--color-border-soft);
+    background: rgba(15, 23, 42, 0.92);
+    backdrop-filter: blur(16px);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: var(--header-height);
+}
+
+.logo {
+    color: var(--color-text);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+}
+
+.menu {
+    display: flex;
+    gap: var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu a {
+    border-radius: var(--radius-full);
+    padding: var(--space-2) var(--space-4);
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-medium);
+}
+
+.menu a:hover,
+.menu a.active {
+    background: var(--color-primary-soft);
+    color: var(--color-text);
+}
+
+.hero {
+    height: 600px;
+    background-image: url('../assets/img/sfondoBG.jpg');
+    background-color: var(--colore-primario);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: var(--colore-scuro);
+}
+
+.hero-content {
+    background-color: rgba(63, 62, 62, 0.24);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.info-section {
+    padding: 60px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 2.5rem;
+    color: var(--colore-primario);
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 1.2rem;
+}
